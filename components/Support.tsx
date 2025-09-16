@@ -18,7 +18,7 @@ const vidsec = [
 ];
 const Support = () => {
   return (
-    <section className="space-y-[70px] px-[15px] lg:px-[30px]">
+    <section className="space-y-[70px] px-[15px] lg:px-[30px] pb-[150px]">
       <div className="space-y-5 max-w-[800px]  mx-auto  ">
         <h1 className="text-4xl md:text-[56px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
           Support that scales
