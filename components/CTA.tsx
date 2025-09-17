@@ -26,7 +26,7 @@ const CTA = () => {
         <img
           src="/grid.png"
           alt=""
-          className="absolute w-full -skew-y-12"
+          className="absolute w-full -rotate-x-[30px]"
         />
       </div>
     </section>

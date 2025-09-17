@@ -3,7 +3,7 @@ import React from "react";
 
 const HomepageHero = () => {
   return (
-    <section className="py-[70px] px-[30px]">
+    <section className="pt-[70px] px-[30px]">
       <div className="max-w-7xl mx-auto space-y-[70px]">
         <div className="  flex flex-col lg:flex-row gap-7 ">
           {/* content */}
@@ -25,7 +25,7 @@ const HomepageHero = () => {
             </button>
           </div>
           {/* image */}
-          <div className="bg-orange-600/50 lg:w-1/2 h-[400px] rounded-3xl"></div>
+          <div className="bg-orange-600/20 lg:w-1/2 h-[500px] rounded-3xl"></div>
         </div>
         <div className="flex flex-col lg:flex-row gap-[50px] lg:gap-7  items-center justify-around w-full  ">
           {[
@@ -45,12 +45,12 @@ const HomepageHero = () => {
               key={idx}
               className="flex flex-col lg:flex-row items-center  gap-3"
             >
-              <img src={img.img} alt="" className="w-[48px]" />
+              <img src={img.img} alt="" className="w-[40px]" />
               <div className="flex flex-col  items-center lg:items-start  gap-3">
-                <p className="text-4xl flex items-center gap-2">
-                  {img.per} {img.per === "2.4" ? <X size={34} /> : <Percent size={34}/>}{" "}
+                <p className="text-3xl flex items-center gap-1">
+                  {img.per} {img.per === "2.4" ? <X size={30} /> : <Percent size={34}/>}{" "}
                 </p>
-                <p className="text-[16px]">{img.txt}</p>
+                <p className="text-[14px]">{img.txt}</p>
               </div>
             </div>
           ))}

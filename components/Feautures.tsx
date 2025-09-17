@@ -34,7 +34,7 @@ const vidsec2 = [
 
 const Feautures = () => {
   return (
-    <section className="py-[150px] px-[30px] space-y-[70px]">
+    <section className="py-[150px] pt-[50px] px-[15px] md:px-[30px] space-y-[70px]">
       <div className="space-y-5 max-w-[800px]  mx-auto  ">
         <h1 className="text-4xl md:text-[56px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
           You don't need a support team, You need vulcan
@@ -50,7 +50,7 @@ const Feautures = () => {
           {vidsec.map((vid, idx) => (
             <div
               key={idx}
-              className="bg-[#0F0F0F] w-full p-10 rounded-[16.6px] md:flex items-center gap-6 lg:block   "
+              className="bg-[#0F0F0F] w-full p-10 px-6 md:px-10 rounded-[16.6px] md:flex items-center gap-6 lg:block   "
             >
               <div>
                 <h4 className="text-[22px] ">{vid.feature}</h4>
