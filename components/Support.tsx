@@ -28,7 +28,7 @@ const Support = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto border">
+      <div className="max-w-7xl mx-auto ">
           <div className="flex flex-col lg:flex-row gap-[25px] h-max ">
             {vidsec.map((vid, idx) => (
               <div

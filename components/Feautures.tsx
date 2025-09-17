@@ -45,7 +45,7 @@ const Feautures = () => {
         </p>
       </div>
 
-      <div className="border max-w-7xl mx-auto space-y-[25px]">
+      <div className=" max-w-7xl mx-auto space-y-[25px]">
         <div className="flex flex-col lg:flex-row gap-[25px] h-max">
           {vidsec.map((vid, idx) => (
             <div

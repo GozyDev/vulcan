@@ -1,3 +1,4 @@
+import Faq from "@/components/Faq";
 import Feautures from "@/components/Feautures";
 import HomepageHero from "@/components/HomepageHero";
 import Insite from "@/components/Insite";
@@ -12,6 +13,7 @@ export default function Home() {
       <Support />
       <Insite />
       <Testimonial/>
+      <Faq/>
     </>
   );
 }
