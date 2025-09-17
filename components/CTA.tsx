@@ -3,8 +3,8 @@ import React from "react";
 const CTA = () => {
   return (
     <section className=" space-y-[70px] px-[15px] lg:px-[30px] pb-[150px]">
-      <div className="max-w-7xl border mx-auto bg-[#0F0F0F] h-[430px] flex justify-center items-center">
-        <div className="space-y-8 flex flex-col items-center justify-center">
+      <div className="max-w-7xl border mx-auto bg-[#0F0F0F] h-[500px] flex justify-center items-center relative overflow-hidden">
+        <div className="space-y-8 flex flex-col items-center justify-center relative overflow-hidden">
           <p className="text-[16px] py-[5px] px-[15px] text-[#969696] bg-white/30 rounded-full w-max">
             Powered by GPT-4
           </p>
@@ -17,10 +17,17 @@ const CTA = () => {
               scaling—so you never feel stuck.
             </p>
           </div>
-          <button className="text-[16px] tracking-[-0.2667px] bg-gradient-to-t from-[#F50000] to-[#FF9452] py-[15px] px-[25px] rounded cursor-pointer hover:shadow-[0px_0px_10px_#FF9452] transition-all">
+          <button className="text-[16px] tracking-[-0.2667px] bg-gradient-to-t from-[#F50000] to-[#FF9452] py-[15px] px-[25px] rounded cursor-pointer hover:shadow-[0px_0px_10px_#FF9452] transition-all  z-[10]">
             Talk to an expert
           </button>
         </div>
+        <div className="bg-green-900/30 w-[300px] h-[300px] rounded-full absolute blur-[150px]  bottom-[-120px]" />
+
+        <img
+          src="/grid.png"
+          alt=""
+          className="absolute w-full -skew-y-12"
+        />
       </div>
     </section>
   );
