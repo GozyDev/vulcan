@@ -1,3 +1,4 @@
+import CTA from "@/components/CTA";
 import Faq from "@/components/Faq";
 import Feautures from "@/components/Feautures";
 import HomepageHero from "@/components/HomepageHero";
@@ -14,6 +15,7 @@ export default function Home() {
       <Insite />
       <Testimonial/>
       <Faq/>
+      <CTA/>
     </>
   );
 }
