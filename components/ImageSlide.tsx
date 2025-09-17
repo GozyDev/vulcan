@@ -15,8 +15,8 @@ const ImageSlide = () => {
   }, [logos]);
 
   return (
-    <section className=" overflow-hidden">
-      <div className=" mx-auto space-y-[50px]">
+    <section className="pt-[80px] py-[80px] lg:py-[110px] px-[15px] lg:px-[40px] overflow-hidden">
+      <div className="">
         <div className="space-y-8  ">
           {/* Row 1: Right → Left */}
           <div className="relative flex overflow-hidden group py-4">
@@ -31,7 +31,7 @@ const ImageSlide = () => {
                     alt={logo.alt}
                     width={250}
                     height={380}
-                    className="drop-shadow-xl  w-[290] h-[380px] object-cover rounded-[9px] opacity-80"
+                    className="drop-shadow-xl  w-[290] h-[380px] object-cover rounded-[9px]"
                   />
                 </div>
               ))}
@@ -60,11 +60,11 @@ const ImageSlide = () => {
         }
 
         .animate-marquee-left {
-          animation: marquee-left 40s linear infinite;
+          animation: marquee-left 50s linear infinite;
         }
 
         .animate-marquee-right {
-          animation: marquee-right 40s linear infinite;
+          animation: marquee-right 50s linear infinite;
         }
 
         /* Pause animation on hover */
