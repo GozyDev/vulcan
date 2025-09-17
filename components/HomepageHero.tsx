@@ -3,7 +3,7 @@ import React from "react";
 
 const HomepageHero = () => {
   return (
-    <section className="pt-[70px] px-[30px]">
+    <section className="pt-[150px] md:pt-[200px] px-[15px] md:px-[30px]">
       <div className="max-w-7xl mx-auto space-y-[70px]">
         <div className="  flex flex-col lg:flex-row gap-7 ">
           {/* content */}

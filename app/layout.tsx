@@ -29,7 +29,7 @@ export default function RootLayout({
             <Navbar/>
             <MobileNavbar/>
           </section>
-          <main className="pt-[70px] lg:pt-[130px]">{children}</main>
+          <main className="">{children}</main>
           <section>
             <Footer/>
           </section>

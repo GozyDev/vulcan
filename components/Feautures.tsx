@@ -111,7 +111,7 @@ const Feautures = () => {
 
           <div className="max-w-[400px]">
              {/* Row 1: Right → Left */}
-          <div className="relative flex overflow-hidden group w-full">
+          <div className="relative flex overflow-hidden group  w-full">
             <div className="flex animate-marquee-left whitespace-nowrap">
               {duplicatedLogos.map((logo, index) => (
                 <div

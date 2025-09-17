@@ -1,5 +1,6 @@
-import { ChevronDown } from "lucide-react";
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const navigation = [
@@ -10,11 +11,11 @@ const navigation = [
 
   {
     name: "Features",
-    href: "/Pricing",
+    href: "/Features",
   },
   {
     name: "About Us",
-    href: "/#solutions",
+    href: "/About",
   },
 
   {
@@ -24,6 +25,7 @@ const navigation = [
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <div className="hidden lg:block px-3">
       <nav className="bg-[#0F0F0F]  rounded-[17px] max-w-7xl mx-auto h-[72px] flex  items-center justify-between pl-[40px] px-[20px] py-[40px] shadow-[inset_0_0_5px_rgb(225,225,225,0.05)]">
@@ -42,7 +44,11 @@ const Navbar = () => {
               >
                 <Link
                   href={nav.href}
-                  className="hover:text-[#FF9452] transition-all text-[18px] "
+                  className={` ${
+                    pathname.startsWith(`${nav.href}`)
+                      ? "text-[#FF9452] "
+                      : ""
+                  } hover:text-[#FF9452] transition-all text-[18px] `}
                 >
                   <p>{nav.name}</p>{" "}
                 </Link>

@@ -1,6 +1,7 @@
 "use client";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
 const navigationData = [
@@ -13,7 +14,7 @@ const navigationData = [
   {
     id: "2",
     name: "Features",
-    href: "/Pricing",
+    href: "/Features",
   },
   {
     id: "3",
@@ -30,9 +31,10 @@ const navigationData = [
 ];
 
 const MobileNavbar = () => {
+  const pathname = usePathname();
+
   const [navigation, setNavigation] = useState(navigationData);
   const [active, setActive] = useState(false);
-  
 
   return (
     <div className="lg:hidden relative px-3 ">
@@ -48,7 +50,10 @@ const MobileNavbar = () => {
 
         {active && (
           <>
-            <div className="bg-black/50 w-full h-full fixed z-[-998] left-0 top-0 backdrop-blur-xs" />
+            <div
+              className="bg-black/50 w-full h-full fixed z-[-998] left-0 top-0 backdrop-blur-xs"
+              onClick={() => (setActive(false), setNavigation(navigationData))}
+            />
             <section className="absolute  w-full top-[100px] left-0 px-3 z-[999]">
               <div className="bg-[#0F0F0F]  rounded-3xl p-6 space-y-[30px] ">
                 <ul className="flex flex-col gap-[30px]">
@@ -59,10 +64,16 @@ const MobileNavbar = () => {
                     >
                       <Link
                         href={nav.href}
-                        className="hover:text-[#FF9452] text-[18px] transition-all text-white "
-                        onClick={() => setActive(false)}
+                        className={` ${
+                          pathname.startsWith(`${nav.href}`)
+                            ? "text-[#FF9452] "
+                            : ""
+                        } hover:text-[#FF9452] transition-all text-[18px] `}
+                        onClick={() => (
+                          setActive(false), setNavigation(navigationData)
+                        )}
                       >
-                        {nav.name}
+                        <p>{nav.name}</p>{" "}
                       </Link>
                     </li>
                   ))}
