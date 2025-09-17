@@ -1,5 +1,5 @@
-import { Divide } from "lucide-react";
-import React from "react";
+import { useMemo } from "react";
+import Image from "next/image";
 
 const vidsec = [
   {
@@ -31,6 +31,18 @@ const vidsec2 = [
     vid: "/Feautures/vid5.webp",
   },
 ];
+
+const logos = [
+  "/Feautures/sv1.png",
+  "/Feautures/sv2.png",
+  "/Feautures/sv3.png",
+  "/Feautures/sv4.png",
+  "/Feautures/sv5.png",
+  "/Feautures/sv6.png",
+];
+
+// Create enough duplicates for seamless looping
+const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
 
 const Feautures = () => {
   return (
@@ -96,25 +108,51 @@ const Feautures = () => {
               HubSpot.
             </p>
           </div>
-          <div>
-            <div className="grid grid-cols-3 w-[300px]">
-              {[
-                "/Feautures/Elemento.png",
-                "/Feautures/image 16 (1).png",
-                "/Feautures/Google Meet.png",
-                "/Feautures/Hubspot.png",
-                "/Feautures/Slack.png",
-                "/Feautures/Wordpress.png",
-              ].map((vid, idx) => (
-                <img
-                  key={idx}
-                  src={vid}
-                  className="w-[900px] aspect-auto"
-                ></img>
+
+          <div className="max-w-[400px]">
+             {/* Row 1: Right → Left */}
+          <div className="relative flex overflow-hidden group w-full">
+            <div className="flex animate-marquee-left whitespace-nowrap">
+              {duplicatedLogos.map((logo, index) => (
+                <div
+                  key={`row1-${index}`}
+                  className="inline-flex items-center  transition-all duration-300 hover:scale-110 flex-shrink-0"
+                >
+                  <Image
+                    src={logo}
+                    alt={logo}
+                    width={140}
+                    height={70}
+                    className="drop-shadow-xl"
+                  />
+                </div>
               ))}
             </div>
           </div>
+
+              <div className="relative flex overflow-hidden group w-full">
+            <div className="flex animate-marquee-right whitespace-nowrap">
+              {duplicatedLogos.map((logo, index) => (
+                <div
+                  key={`row2-${index}`}
+                  className="inline-flex items-center  transition-all duration-300 hover:scale-110 flex-shrink-0"
+                >
+                  <Image
+                    src={logo}
+                    alt={logo}
+                    width={140}
+                    height={70}
+                    className="drop-shadow-xl"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Mirror element for seamless looping */}
+          </div>
         </div>
+      </div>
+
       </div>
     </section>
   );

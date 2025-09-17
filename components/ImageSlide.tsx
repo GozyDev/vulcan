@@ -60,11 +60,11 @@ const ImageSlide = () => {
         }
 
         .animate-marquee-left {
-          animation: marquee-left 50s linear infinite;
+          animation: marquee-left 40s linear infinite;
         }
 
         .animate-marquee-right {
-          animation: marquee-right 50s linear infinite;
+          animation: marquee-right 40s linear infinite;
         }
 
         /* Pause animation on hover */
