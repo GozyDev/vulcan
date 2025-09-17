@@ -2,6 +2,7 @@ import Feautures from "@/components/Feautures";
 import HomepageHero from "@/components/HomepageHero";
 import Insite from "@/components/Insite";
 import Support from "@/components/Support";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Feautures />
       <Support />
       <Insite />
+      <Testimonial/>
     </>
   );
 }
