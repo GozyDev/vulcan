@@ -21,7 +21,7 @@ export default function FeatureCards() {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-[#0F0F0F] rounded-2xl p-4 shadow-lg hover:shadow-xl transition"
+              className="bg-[#0F0F0F] rounded-2xl p-4 shadow-lg hover:shadow-xl transition group"
             >
               <Link href={`/Features/${feature.title}`}>
                 <div className="relative w-full h-40 rounded-xl overflow-hidden mb-4">
@@ -29,7 +29,7 @@ export default function FeatureCards() {
                     src={feature.image}
                     alt={feature.title}
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:opacity-60 transition-all"
                   />
                 </div>
               </Link>

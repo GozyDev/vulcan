@@ -156,7 +156,7 @@ const AboutUs = () => {
           {vidsec.map((vid, idx) => (
             <div
               key={idx}
-              className="bg-[#0F0F0F] w-full p-10 rounded-[16.6px] flex flex-col items-center justify-center space-y-[25px]"
+              className="bg-gradient-to-b from-neutral-900 to-black w-full p-10 rounded-[16.6px] flex flex-col items-center justify-center space-y-[25px]"
             >
               <img src={vid.vid} className="w-[180px] h-[180px] object-cover rounded-full"></img>
               <div className="">
