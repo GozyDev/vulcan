@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex">
-          <Link href="/signup">
+          <Link href="/Contact">
             <button className="text-[16px] tracking-[-0.2667px] bg-gradient-to-t from-[#F50000] to-[#FF9452] py-[15px] px-[25px] rounded cursor-pointer hover:shadow-[0px_0px_10px_#FF9452] transition-all text-white">
               Create your agent
             </button>
