@@ -146,10 +146,12 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto space-y-[70px] ">
         <div className="space-y-5 max-w-[800px]  mx-auto  ">
           <h1 className="text-4xl md:text-[56px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
-            Support that scales
+            The Team Behind Vulcan
           </h1>
           <p className="text-[15px] md:text-[18px] leading-[27px] text-[#969696] text-center">
-            Unlock the Full Potential of Your Experience
+            We’ve seen the pain points of customer service firsthand. That’s why
+            we’re building Vulcan—not as just another helpdesk, but as a smarter
+            way forward.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[25px] h-max ">
@@ -158,7 +160,10 @@ const AboutUs = () => {
               key={idx}
               className="bg-gradient-to-b from-neutral-900 to-black w-full p-10 rounded-[16.6px] flex flex-col items-center justify-center space-y-[25px]"
             >
-              <img src={vid.vid} className="w-[180px] h-[180px] object-cover rounded-full"></img>
+              <img
+                src={vid.vid}
+                className="w-[180px] h-[180px] object-cover rounded-full"
+              ></img>
               <div className="">
                 <h4 className="text-[22px] text-center">{vid.feature}</h4>
                 <p className="text-[16px] mt-3 text-[#969696] text-center">

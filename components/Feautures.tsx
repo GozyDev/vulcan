@@ -33,12 +33,7 @@ const vidsec2 = [
 ];
 
 const logos = [
-  "/Feautures/sv1.png",
-  "/Feautures/sv2.png",
-  "/Feautures/sv3.png",
-  "/Feautures/sv4.png",
-  "/Feautures/sv5.png",
-  "/Feautures/sv6.png",
+  "/Feautures/el1.jpg",
 ];
 
 // Create enough duplicates for seamless looping
@@ -100,7 +95,7 @@ const Feautures = () => {
           ))}
         </div>
 
-        <div className="bg-[#0F0F0F] w-full p-10 rounded-[16.6px] flex justify-between items-center overflow-hidden">
+        <div className="bg-[#0F0F0F] w-full p-10 rounded-[16.6px] gap-6 flex flex-col-reverse md:flex-row justify-between items-center overflow-hidden">
           <div>
             <h4 className="text-[22px] ">Integrations</h4>
             <p className="text-[16px] mt-3 text-[#969696]">
@@ -109,7 +104,7 @@ const Feautures = () => {
             </p>
           </div>
 
-          <div className="max-w-[400px]">
+          <div className="max-w-[400px] space-y-[10px]">
              {/* Row 1: Right → Left */}
           <div className="relative flex overflow-hidden group  w-full">
             <div className="flex animate-marquee-left whitespace-nowrap">
@@ -123,7 +118,7 @@ const Feautures = () => {
                     alt={logo}
                     width={140}
                     height={70}
-                    className="drop-shadow-xl"
+                    className="drop-shadow-xl w-[110px] h-[110px] mx-1 rounded-3xl"
                   />
                 </div>
               ))}
@@ -142,7 +137,7 @@ const Feautures = () => {
                     alt={logo}
                     width={140}
                     height={70}
-                    className="drop-shadow-xl"
+                    className="drop-shadow-xl w-[110px] h-[110px] mx-1 rounded-3xl"
                   />
                 </div>
               ))}
