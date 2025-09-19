@@ -33,11 +33,18 @@ const vidsec2 = [
 ];
 
 const logos = [
-  "/Feautures/el1.jpg",
+  "/Feautures/el1.png",
+  "/Feautures/el2.png",
+  "/Feautures/el3.png",
 ];
-
+const logo2 = [
+  "/Feautures/el4.png",
+  "/Feautures/el5.png",
+  "/Feautures/el6.png",
+];
 // Create enough duplicates for seamless looping
 const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
+const duplicatedLogos2 = [...logo2, ...logo2, ...logo2, ...logo2];
 
 const Feautures = () => {
   return (
@@ -89,7 +96,7 @@ const Feautures = () => {
               </div>
               <img
                 src={vid.vid}
-                className=" md:w-1/2 lg:w-full h-[230px] object-cover h mt-8"
+                className=" md:w-1/2 lg:w-full rounded-2xl h mt-8"
               ></img>
             </div>
           ))}
@@ -105,49 +112,49 @@ const Feautures = () => {
           </div>
 
           <div className="max-w-[400px] space-y-[10px]">
-             {/* Row 1: Right → Left */}
-          <div className="relative flex overflow-hidden group  w-full">
-            <div className="flex animate-marquee-left whitespace-nowrap">
-              {duplicatedLogos.map((logo, index) => (
-                <div
-                  key={`row1-${index}`}
-                  className="inline-flex items-center  transition-all duration-300 hover:scale-110 flex-shrink-0"
-                >
-                  <Image
-                    src={logo}
-                    alt={logo}
-                    width={140}
-                    height={70}
-                    className="drop-shadow-xl w-[110px] h-[110px] mx-1 rounded-3xl"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-              <div className="relative flex overflow-hidden group w-full">
-            <div className="flex animate-marquee-right whitespace-nowrap">
-              {duplicatedLogos.map((logo, index) => (
-                <div
-                  key={`row2-${index}`}
-                  className="inline-flex items-center  transition-all duration-300 hover:scale-110 flex-shrink-0"
-                >
-                  <Image
-                    src={logo}
-                    alt={logo}
-                    width={140}
-                    height={70}
-                    className="drop-shadow-xl w-[110px] h-[110px] mx-1 rounded-3xl"
-                  />
-                </div>
-              ))}
+            {/* Row 1: Right → Left */}
+            <div className="relative flex overflow-hidden group  w-full">
+              <div className="flex animate-marquee-left whitespace-nowrap">
+                {duplicatedLogos.map((logo, index) => (
+                  <div
+                    key={`row1-${index}`}
+                    className="inline-flex items-center  transition-all duration-300 hover:scale-110 flex-shrink-0"
+                  >
+                    <Image
+                      src={logo}
+                      alt={logo}
+                      width={140}
+                      height={70}
+                      className="drop-shadow-xl w-[110px] h-[110px] mx-1 rounded-3xl"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Mirror element for seamless looping */}
+            {/* Row 2: Left → right */}
+            <div className="relative flex overflow-hidden group w-full">
+              <div className="flex animate-marquee-right whitespace-nowrap">
+                {duplicatedLogos2.map((logo, index) => (
+                  <div
+                    key={`row2-${index}`}
+                    className="inline-flex items-center  transition-all duration-300 hover:scale-110 flex-shrink-0"
+                  >
+                    <Image
+                      src={logo}
+                      alt={logo}
+                      width={140}
+                      height={70}
+                      className="drop-shadow-xl w-[110px] h-[110px] mx-1 rounded-3xl"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {/* Mirror element for seamless looping */}
+            </div>
           </div>
         </div>
-      </div>
-
       </div>
     </section>
   );
