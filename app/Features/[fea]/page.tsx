@@ -15,10 +15,10 @@ const page = async ({ params }: { params: Promise<{ fea: string }> }) => {
       >
         <div className="absolute bg-[rgb(15,15,15,0.99)] backdrop-blur-xl  w-full h-full top-0 left-0" />
         <div className="space-y-5   mx-auto relative ">
-          <h1 className="text-6xl md:text-[90px]   tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
+          <h1 className="text-4xl md:text-[90px]   tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
             {text}
           </h1>
-          <p className="text-[15px] md:text-[18px] leading-[27px] text-[#969696] text-center max-w-[800px]  mx-auto   ">
+          <p className="text-[14px] md:text-[18px] leading-[27px] text-[#969696] text-center max-w-[800px]  mx-auto   ">
             Our features elevate your support, from multilingual conversations
             to advanced integrations, Vulcan comes with powerful extras that
             make your support smarter, faster, and ready to scale.
@@ -52,10 +52,10 @@ const page = async ({ params }: { params: Promise<{ fea: string }> }) => {
             <div className=" rounded-[10px] space-y-[25px]">
               {featureShown?.subfeature?.map((sub, idx) => (
                 <div key={idx} className="bg-[#0f0f0f] rounded-[10px]">
-                  <h3 className="p-[20px] text-[25px] lg:text-[32px]">
+                  <h3 className="p-[20px] text-[20px] lg:text-[32px]">
                     {sub.text}
                   </h3>
-                  <p className="p-[20px] text-[15px] text-[#969696]">
+                  <p className="p-[20px] text-[14px]  md:text-[15px] text-[#969696]">
                     {sub.description}
                   </p>
                 </div>

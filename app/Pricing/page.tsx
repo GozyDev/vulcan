@@ -105,7 +105,7 @@ const page = () => {
         </p>
       </div>
 
-      <div className="">
+      <div className=" overflow-x-auto">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pricingPlans.map((plan) => (
             <div
@@ -113,24 +113,25 @@ const page = () => {
               className="rounded-2xl p-6 bg-gradient-to-b from-neutral-900 to-black text-white border border-neutral-800 shadow-lg relative flex flex-col justify-between"
             >
               {/* Popular tag */}
-              {plan.popular && (
-                <span className="absolute top-4 right-4 bg-white text-black text-xs font-semibold px-3 py-1 rounded-full">
-                  Popular
-                </span>
-              )}
 
               {/* Title */}
-              <h3 className="text-lg font-semibold mb-2">{plan.title}</h3>
+              <h3 className="text-lg font-medium mb-2">{plan.title}</h3>
 
               {/* Price */}
-              <div className="text-4xl font-bold mb-4">
+              <div className="text-4xl  mb-4 flex items-center justify-between">
                 {plan.price === "Custom" ? (
                   <span>Custom Pricing</span>
                 ) : (
-                  <>
+                  <div>
                     ${plan.price}
                     <span className="text-lg font-normal">/month</span>
-                  </>
+                  </div>
+                )}
+
+                {plan.popular && (
+                  <span className=" top-4 right-4 bg-white text-black text-xs font-semibold px-3 py-1 rounded-full">
+                    Popular
+                  </span>
                 )}
               </div>
 
@@ -160,11 +161,13 @@ const page = () => {
           {/* Table Header */}
           <thead>
             <tr>
-              <th className="p-4 font-semibold text-lg">Features</th>
+              <th className="p-2 md:p-4 font-semibold text-[15px] md:text-lg">
+                Features
+              </th>
               {plans.map((plan) => (
                 <th
                   key={plan}
-                  className="p-4 font-semibold text-lg text-center bg-gradient-to-b from-[#0F0F0F] to-[#FF620012] rounded-t-md"
+                  className="md:p-4 font-semibold text-[15px] md:text-lg text-center bg-gradient-to-b from-[#0F0F0F] to-[#FF620012] rounded-t-md"
                 >
                   {plan}
                 </th>
@@ -179,9 +182,16 @@ const page = () => {
                 key={idx}
                 className="border-t border-gray-700 hover:bg-[rgba(255,98,0,0.01)] transition"
               >
-                <td className="p-4  text-[13px] md:text-[16px]">{row.feature}</td>
+                <td className="p-2 md:p-4  text-[10px] md:text-[16px]">
+                  {row.feature}
+                </td>
                 {row.values.map((val, i) => (
-                  <td key={i} className={`${val ==="✔" ? "text-green-500" : ''} p-4 text-center text-[13px] md:text-[16px]`}>
+                  <td
+                    key={i}
+                    className={`${
+                      val === "✔" ? "text-green-500" : ""
+                    } p-2 md:p-4 text-center text-[10px] md:text-[16px]`}
+                  >
                     {val}
                   </td>
                 ))}

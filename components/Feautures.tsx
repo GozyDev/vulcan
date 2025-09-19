@@ -111,9 +111,11 @@ const Feautures = () => {
             </p>
           </div>
 
-          <div className="max-w-[400px] space-y-[10px]">
+          <div className="max-w-[520px] space-y-[10px] relative">
+            <div className="absolute bg-[#0F0F0F] z-[10] h-full w-[50px] top-0 left-0 shadow-[10px_0px_10px_#0F0F0F]"/>
+            <div className="absolute bg-[#0F0F0F] z-[10] h-full w-[50px] top-0 right-0 shadow-[-10px_0px_10px_#0F0F0F]"/>
             {/* Row 1: Right → Left */}
-            <div className="relative flex overflow-hidden group  w-full">
+            <div className="relative flex overflow-hidden group  w-full ">
               <div className="flex animate-marquee-left whitespace-nowrap">
                 {duplicatedLogos.map((logo, index) => (
                   <div

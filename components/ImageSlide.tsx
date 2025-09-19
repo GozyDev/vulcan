@@ -31,7 +31,7 @@ const ImageSlide = () => {
                     alt={logo.alt}
                     width={250}
                     height={380}
-                    className="drop-shadow-xl  w-[290] h-[380px] object-cover rounded-[9px]"
+                    className="drop-shadow-xl w-[210]  md:w-[290] h-[280px] md:h-[380px]  object-cover rounded-[9px]"
                   />
                 </div>
               ))}
@@ -60,11 +60,11 @@ const ImageSlide = () => {
         }
 
         .animate-marquee-left {
-          animation: marquee-left 40s linear infinite;
+          animation: marquee-left 60s linear infinite;
         }
 
         .animate-marquee-right {
-          animation: marquee-right 40s linear infinite;
+          animation: marquee-right 60s linear infinite;
         }
 
         /* Pause animation on hover */

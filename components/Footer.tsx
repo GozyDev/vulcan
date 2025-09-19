@@ -35,19 +35,19 @@ export default function Footer() {
         {/* Navigation links */}
         <nav className="flex space-x-3 lg:space-x-5 text-gray-800 font-medium text-sm lg:text-lg">
           <Link
-            href="/#solutions"
+            href="/"
             className="text-[#969696] hover:text-[#FF9452]  text-md"
           >
             Home
           </Link>
           <Link
-            href="/Blog"
+            href="/Features"
             className="text-[#969696] hover:text-[#FF9452] text-md"
           >
             Features
           </Link>
           <Link
-            href="/Faqs"
+            href="/About"
             className="text-[#969696] hover:text-[#FF9452] text-md"
           >
             About Us
