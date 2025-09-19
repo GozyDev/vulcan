@@ -57,26 +57,28 @@ const MobileNavbar = () => {
             <section className="absolute  w-full top-[100px] left-0 px-3 z-[999]">
               <div className="bg-[#0F0F0F]  rounded-3xl p-6 space-y-[30px] ">
                 <ul className="flex flex-col gap-[30px]">
-                  {navigation.map((nav, index) => (
-                    <li
-                      key={index}
-                      className="cursor-pointer relative group bg-transparent "
-                    >
-                      <Link
-                        href={nav.href}
-                        className={` ${
-                          pathname.startsWith(`${nav.href}`)
-                            ? "text-[#FF9452] "
-                            : ""
-                        } hover:text-[#FF9452] transition-all text-[18px] `}
-                        onClick={() => (
-                          setActive(false), setNavigation(navigationData)
-                        )}
+                  {navigation.map((nav, index) =>
+                    nav ? (
+                      <li
+                        key={index}
+                        className="cursor-pointer relative group bg-transparent "
                       >
-                        <p>{nav.name}</p>{" "}
-                      </Link>
-                    </li>
-                  ))}
+                        <Link
+                          href={nav.href}
+                          className={` ${
+                            pathname.startsWith(`${nav.href}`)
+                              ? "text-[#FF9452] "
+                              : ""
+                          } hover:text-[#FF9452] transition-all text-[18px] `}
+                          onClick={() => (
+                            setActive(false), setNavigation(navigationData)
+                          )}
+                        >
+                          <p>{nav.name}</p>{" "}
+                        </Link>
+                      </li>
+                    ) : null
+                  )}
                 </ul>
                 {
                   <div className="flex flex-col gap-3">
