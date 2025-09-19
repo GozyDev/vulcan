@@ -1,4 +1,4 @@
-import { Divide } from "lucide-react";
+
 import React from "react";
 export type Testimonial = {
   id: string;

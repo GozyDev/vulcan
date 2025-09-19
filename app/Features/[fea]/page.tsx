@@ -50,7 +50,7 @@ const page = async ({ params }: { params: Promise<{ fea: string }> }) => {
 
           <div className="flex-1 ">
             <div className=" rounded-[10px] space-y-[25px]">
-              {featureShown.subfeature.map((sub, idx) => (
+              {featureShown?.subfeature?.map((sub, idx) => (
                 <div key={idx} className="bg-[#0f0f0f] rounded-[10px]">
                   <h3 className="p-[20px] text-[25px] lg:text-[32px]">
                     {sub.text}

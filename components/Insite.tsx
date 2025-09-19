@@ -1,19 +1,21 @@
 "use client";
 import React, { useMemo } from "react";
 
-const Insite = () => {
-  const logos = [
-    "API & Webhooks",
-    "Multilingual Replies",
-    "Custom Workflows",
-    "Feedback & ratings loop",
-    "Role-based Permissions",
-  ];
+// Move logos array outside the component
+const LOGOS = [
+  "API & Webhooks",
+  "Multilingual Replies",
+  "Custom Workflows",
+  "Feedback & ratings loop",
+  "Role-based Permissions",
+];
 
+const Insite = () => {
   // Create enough duplicates for seamless looping
   const duplicatedLogos = useMemo(() => {
-    return [...logos, ...logos, ...logos, ...logos];
-  }, [logos]);
+    return [...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS];
+  }, []); // Empty dependency array since LOGOS is constant
+
   return (
     <section className="space-y-[70px] px-[15px] lg:px-[30px] pb-[150px]">
       <div className="space-y-5 max-w-[800px]  mx-auto  ">
@@ -35,7 +37,6 @@ const Insite = () => {
                   className="inline-flex items-center  transition-all duration-300 hover:scale-100 flex-shrink-0 cursor-pointer"
                 >
                   <div
-                    key={`row1-${index}`}
                     className="inline-flex items-center gap-2  transition-all duration-300 hover:scale-110 flex-shrink-0 py-[20px] px-[30px] bg-gradient-to-b from-[#FF945263] to-[#F50000] rounded-[12px]"
                   >
                    <img src='kni.svg' alt="" /> {logo}
@@ -43,8 +44,6 @@ const Insite = () => {
                 </div>
               ))}
             </div>
-
-            {/* Mirror element for seamless looping */}
           </div>
         </div>
       </div>

@@ -101,7 +101,7 @@ const page = () => {
         </h1>
         <p className="text-[15px] md:text-[18px] leading-[27px] text-[#969696] text-center">
           Transparent pricing, no surprises. Choose a plan that fits your needs
-          and scale up whenever you're ready
+          and scale up whenever you&apos;re ready
         </p>
       </div>
 

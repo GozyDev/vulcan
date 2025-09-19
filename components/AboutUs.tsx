@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import { Percent, X } from "lucide-react";
 const vidsec = [
   {
@@ -149,8 +149,8 @@ const AboutUs = () => {
             The Team Behind Vulcan
           </h1>
           <p className="text-[15px] md:text-[18px] leading-[27px] text-[#969696] text-center">
-            We’ve seen the pain points of customer service firsthand. That’s why
-            we’re building Vulcan—not as just another helpdesk, but as a smarter
+            We&apos;ve seen the pain points of customer service firsthand. That’s why
+            we&apos;re building Vulcan—not as just another helpdesk, but as a smarter
             way forward.
           </p>
         </div>
@@ -163,6 +163,7 @@ const AboutUs = () => {
               <img
                 src={vid.vid}
                 className="w-[180px] h-[180px] object-cover rounded-full"
+                alt=""
               ></img>
               <div className="">
                 <h4 className="text-[22px] text-center">{vid.feature}</h4>

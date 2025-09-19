@@ -47,7 +47,7 @@ const Faq = () => {
           Frequently Asked Questions
         </h1>
         <p className="text-[15px] md:text-[18px] leading-[27px] text-[#969696] text-center">
-          We've got the right answers to any doubts or questions you might be
+          We&apos;ve got the right answers to any doubts or questions you might be
           having
         </p>
       </div>

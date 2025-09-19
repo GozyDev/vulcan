@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import Image from "next/image";
 
 const vidsec = [
@@ -51,7 +50,7 @@ const Feautures = () => {
     <section className="py-[150px] pt-[50px] px-[15px] md:px-[30px] space-y-[70px]">
       <div className="space-y-5 max-w-[800px]  mx-auto  ">
         <h1 className="text-4xl md:text-[56px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
-          You don't need a support team, You need vulcan
+          You don&apos;t need a support team, You need vulcan
         </h1>
         <p className="text-[15px] md:text-[18px] leading-[27px] text-[#969696] text-center">
           Vulcan gives you the full toolkit to deliver great customer
@@ -97,6 +96,7 @@ const Feautures = () => {
               <img
                 src={vid.vid}
                 className=" md:w-1/2 lg:w-full rounded-2xl h mt-8"
+                alt=""
               ></img>
             </div>
           ))}
