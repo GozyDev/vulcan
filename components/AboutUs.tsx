@@ -56,34 +56,34 @@ const AboutUs = () => {
         </div>
 
         <div className="space-y-5  mx-auto  ">
-          <h2 className="text-6xl md:text-[70px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
+          <h2 className="text-4xl md:text-[70px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
             Who We Are
           </h2>
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             At <b>Vulcan</b>, we’re redefining how businesses connect with their
             customers. Our platform combines the power of AI automation with
             human-focused design, helping teams deliver faster, smarter, and
             more personal support at scale.
           </p>
 
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             We started with a simple belief: customer support should be
-            effortless. Today, we’re proud to serve businesses across
+            effortless. Today, we&apos;re proud to serve businesses across
             industries—ecommerce, fintech, SaaS, and beyond—by turning complex
             workflows into seamless conversations.
           </p>
         </div>
 
         <div className="space-y-5  mx-auto  ">
-          <h2 className="text-6xl md:text-[70px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
+          <h2 className="text-4xl md:text-[70px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
             Our Mission
           </h2>
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             To empower businesses of all sizes with tools that make customer
             interactions easier, more efficient, and more impactful.
           </p>
 
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             We’re not here just to reduce ticket volume—we’re here to improve
             experiences, build trust, and help teams grow without losing their
             personal touch.
@@ -91,22 +91,22 @@ const AboutUs = () => {
         </div>
 
         <div className="space-y-5  mx-auto  ">
-          <h2 className="text-6xl md:text-[70px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
+          <h2 className="text-4xl md:text-[70px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
             Our Values
           </h2>
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             <b>Innovation with Purpose</b> → Every feature we build is designed
             to solve real customer challenges.
           </p>
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             <b>Transparency & Trust → </b>We believe great support starts with
             honesty and reliability.
           </p>
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             <b>Scalability for All →</b> Whether you’re a startup or enterprise,
             our tools grow with you.
           </p>
-          <p className="text-[15px] md:text-[17px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[17px] leading-[27px] text-[#969696] text-center">
             <b>Human + AI Synergy → </b>Technology should amplify people, not
             replace them.
           </p>
@@ -148,7 +148,7 @@ const AboutUs = () => {
           <h1 className="text-4xl md:text-[56px]  md:leading-[64px] tracking-[-2.7506px] bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent  text-center ">
             The Team Behind Vulcan
           </h1>
-          <p className="text-[15px] md:text-[18px] leading-[27px] text-[#969696] text-center">
+          <p className="text-[14px] md:text-[18px] leading-[27px] text-[#969696] text-center">
             We&apos;ve seen the pain points of customer service firsthand. That’s why
             we&apos;re building Vulcan—not as just another helpdesk, but as a smarter
             way forward.
@@ -162,7 +162,7 @@ const AboutUs = () => {
             >
               <img
                 src={vid.vid}
-                className="w-[180px] h-[180px] object-cover rounded-full"
+                className=" w-[120px] h-[120px] md:w-[180px] md:h-[180px] object-cover rounded-full"
                 alt=""
               ></img>
               <div className="">

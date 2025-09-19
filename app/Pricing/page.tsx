@@ -115,10 +115,10 @@ const page = () => {
               {/* Popular tag */}
 
               {/* Title */}
-              <h3 className="text-lg font-medium mb-2">{plan.title}</h3>
+              <h3 className="text-md font-medium mb-2">{plan.title}</h3>
 
               {/* Price */}
-              <div className="text-4xl  mb-4 flex items-center justify-between">
+              <div className="text-3xl  mb-4 flex items-center justify-between">
                 {plan.price === "Custom" ? (
                   <span>Custom Pricing</span>
                 ) : (
