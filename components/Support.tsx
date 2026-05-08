@@ -35,7 +35,7 @@ const Support = () => {
                 key={idx}
                 className="bg-[#0F0F0F] w-full p-10 rounded-[16.6px] flex flex-col items-center justify-center space-y-[25px]"
               >
-                <img src={vid.vid} className="w-[120px] h-[120px] md:w-[180px] md:h-[180px]" alt=""></img>
+                <img src={vid.vid} className="w-[120px] h-[120px] md:w-[120px] md:h-[120px]" alt=""></img>
                 <div className="">
                   <h4 className="text-[20px] md:text-[22px] text-center">{vid.feature}</h4>
                   <p className="text-[14px] md:text-[16px] mt-3 text-[#969696] text-center">
